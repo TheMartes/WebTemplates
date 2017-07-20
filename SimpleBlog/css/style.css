@@ -1,0 +1,55 @@
+/*
+ * GENERAL
+ *****************************/
+
+ body {
+ 	width: 80%;
+ 	display: flex;
+ 	margin-left: 10%;
+ 	background: #f7f7f7;
+ }
+
+ /* Fonts */
+* {
+	font-family: 'Lora', Serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Istok Web', 'Helvetica', 'Arial', 'Ubuntu', 'Sans-serif';
+}
+
+.sub-heading {
+	opacity: .7;
+}
+
+hr {
+	opacity: .2;
+}
+
+/*
+ * Mobile
+ *****************************/
+
+ @media(max-width: 728px) {
+	body {
+		flex-direction: column; 
+	}
+
+	.post h3 {
+		opacity: .5;
+		text-transform: uppercase;
+		display: absolute;
+		z-index: -1;
+		margin-top: -10%;
+		text-align: right;
+		transform: rotate(-45deg);
+	}
+ }
+
+
+
