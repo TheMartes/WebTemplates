@@ -36,4 +36,4 @@ If you like this project, please consider to buy me a beer for time, I've spent 
 
 ### **Enjoy your new theme :)**
 
-<p align="center">Coded with &#x2764; using [atom.io](atom.io) by [@TheMartes](https://twitter.com/TheMartes_)</p>
+<p align="center">Coded with &#x2764; using [atom.io](http://atom.io) by [@TheMartes](https://twitter.com/TheMartes_)</p>
