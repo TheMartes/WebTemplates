@@ -6,7 +6,6 @@
  	width: 80%;
  	display: flex;
  	margin-left: 10%;
- 	background: #fcfcfc;
  }
 
  /* Fonts */
@@ -29,6 +28,10 @@ h6 {
 
 hr {
 	opacity: .2;
+}
+
+.active {
+	font-weight: bold;
 }
 
 /*
@@ -64,6 +67,18 @@ hr {
     color: black;
   }
 
+  .social .fa, a {
+  	opacity: 0.8;
+  }
+
+  .social .fa:hover, a:hover {
+  	-webkit-transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000); 
+  	-moz-transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000); 
+    -o-transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000); 
+     transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000); 
+     opacity: 1;
+  }
+
   a .fa-github:hover {
    color: #24292e;
   }
@@ -78,6 +93,10 @@ hr {
 
   /* Posts */
 
+  .post {
+  	margin-bottom: 15%;
+  }
+
   .post p {
     line-height: 1.6;
   }
@@ -85,6 +104,7 @@ hr {
   .post footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -94,15 +114,218 @@ hr {
     font-family: 'Istok Web';
   }
 
-  .post button {
+  .author:hover {
+  	color: #1da1f2;
+  }
+
+  .read-more {
    background: #1da1f2;
+   text-decoration: none;
+   padding: 3% 4%;
+   text-align: center;
    color: white;
    border: 0;
    border-radius: 5px;
+   font-family: 'Istok Web';
   }
 
-  .post button:hover {
+  .read-more:hover {
     background: #1d92f2;
     cursor: pointer;
+  }
+
+  /* Paginte */
+
+  .paginate {
+  	display: flex;
+  	justify-content: center;
+  	flex-direction: row;
+  }
+
+  .paginate span {
+  	padding: 3%;
+  	color: #24292e;
+  }
+
+  .paginate span:hover {
+  	text-decoration: underline;
+  	cursor: pointer;
+  }
+
+  /* Footer */
+  footer {
+  	display: flex;
+  	justify-content: center;
+  	margin: 10% 0;
+  }
+
+  footer .credit {
+  	text-decoration: none;
+  	color: black;
+  	opacity: .7;
+  }
+	
+  footer .credit:hover {
+  	color: #1d92f2;
+  }
+
+  /* About */
+  .about {
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	margin-top: 5%;
+  }
+
+  .about img {
+  	width: 75%;
+  	border-radius: 100%;
+  }
+ }
+
+ @media(max-width: 1280px) {
+	body {
+		flex-direction: column;
+	}
+
+  /* HEADER */
+
+  header {
+    margin-top: 5%;
+    justify-content: center;
+  }
+
+  header .sub-heading {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  header .social {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  header .social .fa {
+    margin: 0 1%;
+    font-size: 125%;
+    text-decoration: none;
+    color: black;
+  }
+
+  .social .fa, a {
+  	opacity: 0.8;
+  }
+
+  .social .fa:hover, a:hover {
+  	-webkit-transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000); 
+  	-moz-transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000); 
+    -o-transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000); 
+     transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000); 
+     opacity: 1;
+  }
+
+  a .fa-github:hover {
+   color: #24292e;
+  }
+
+  a .fa-twitter:hover {
+   color: #1da1f2;
+  }
+
+  a .fa-spotify:hover {
+   color: #1db954;
+  }
+
+  /* Posts */
+
+  .post {
+  	margin-bottom: 7%;
+  }
+
+  .post p {
+    line-height: 1.6;
+  }
+
+  .post footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .author {
+    text-decoration: none;
+    color: black;
+    font-family: 'Istok Web';
+  }
+
+  .author:hover {
+  	color: #1da1f2;
+  }
+
+  .read-more {
+   background: #1da1f2;
+   text-decoration: none;
+   padding: 1% 2%;
+   text-align: center;
+   color: white;
+   border: 0;
+   border-radius: 5px;
+   font-family: 'Istok Web';
+  }
+
+  .read-more:hover {
+    background: #1d92f2;
+    cursor: pointer;
+  }
+
+  /* Paginte */
+
+  .paginate {
+  	display: flex;
+  	justify-content: center;
+  	flex-direction: row;
+  }
+
+  .paginate span {
+  	padding: 3%;
+  	color: #24292e;
+  }
+
+  .paginate span:hover {
+  	text-decoration: underline;
+  	cursor: pointer;
+  }
+
+  /* Footer */
+  footer {
+  	display: flex;
+  	justify-content: center;
+  	margin: 5% 0;
+  }
+
+  footer .credit {
+  	text-decoration: none;
+  	color: black;
+  	opacity: .7;
+  }
+	
+  footer .credit:hover {
+  	color: #1d92f2;
+  }
+
+  /* About */
+  .about {
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	margin-top: 5%;
+  }
+
+  .about img {
+  	width: 75%;
+  	border-radius: 100%;
   }
  }
