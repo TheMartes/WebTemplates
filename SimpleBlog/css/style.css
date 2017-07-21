@@ -6,7 +6,7 @@
  	width: 80%;
  	display: flex;
  	margin-left: 10%;
- 	background: #f7f7f7;
+ 	background: #fcfcfc;
  }
 
  /* Fonts */
@@ -24,7 +24,7 @@ h6 {
 }
 
 .sub-heading {
-	opacity: .7;
+	opacity: .75;
 }
 
 hr {
@@ -37,19 +37,72 @@ hr {
 
  @media(max-width: 728px) {
 	body {
-		flex-direction: column; 
+		flex-direction: column;
 	}
 
-	.post h3 {
-		opacity: .5;
-		text-transform: uppercase;
-		display: absolute;
-		z-index: -1;
-		margin-top: -10%;
-		text-align: right;
-		transform: rotate(-45deg);
-	}
+  /* HEADER */
+
+  header {
+    margin-top: 5%;
+    justify-content: center;
+  }
+
+  header .sub-heading {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  header .social {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  header .social .fa {
+    margin: 0 1%;
+    font-size: 125%;
+    text-decoration: none;
+    color: black;
+  }
+
+  a .fa-github:hover {
+   color: #24292e;
+  }
+
+  a .fa-twitter:hover {
+   color: #1da1f2;
+  }
+
+  a .fa-spotify:hover {
+   color: #1db954;
+  }
+
+  /* Posts */
+
+  .post p {
+    line-height: 1.6;
+  }
+
+  .post footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .author {
+    text-decoration: none;
+    color: black;
+    font-family: 'Istok Web';
+  }
+
+  .post button {
+   background: #1da1f2;
+   color: white;
+   border: 0;
+   border-radius: 5px;
+  }
+
+  .post button:hover {
+    background: #1d92f2;
+    cursor: pointer;
+  }
  }
-
-
-
