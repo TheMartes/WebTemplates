@@ -5,7 +5,7 @@
 body {
     width: 80%;
     display: flex;
-    margin-left: 10%;
+    margin: 0 10%;
 }
 /* Fonts */
 * {
@@ -45,26 +45,17 @@ hr {
         text-transform: uppercase;
     }
     header .social {
+        display: flex;
         flex-direction: row;
-        text-align: center;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
     }
     header .social .fa {
-        margin: 0 1%;
+        padding: 0 25%;
         font-size: 125%;
         text-decoration: none;
         color: black;
-    }
-    .social .fa,
-    a {
-        opacity: 0.8;
-    }
-    .social .fa:hover,
-    a:hover {
-        -webkit-transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
-        -moz-transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
-        -o-transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
-        transition: all 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
-        opacity: 1;
     }
     a .fa-github:hover {
         color: #24292e;
@@ -88,6 +79,21 @@ hr {
         justify-content: space-between;
         align-items: center;
     }
+
+    .single-post {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .single-post img {
+        width: 100%;
+    }
+    .single-post p {
+        line-height: 1.75;
+    }
+
     .author {
         text-decoration: none;
         color: black;
@@ -110,17 +116,20 @@ hr {
         background: #1d92f2;
         cursor: pointer;
     }
-    /* Paginte */
+    /* Paginate */
     .paginate {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: row;
+        list-style: none;
+        padding: 0;
     }
-    .paginate span {
+    .paginate li {
         padding: 3%;
         color: #24292e;
     }
-    .paginate span:hover {
+    .paginate li:hover {
         text-decoration: underline;
         cursor: pointer;
     }
@@ -146,8 +155,18 @@ hr {
         align-items: center;
         margin-top: 5%;
     }
-    .about img {
-        width: 75%;
+
+    .about h2 {
+      text-align: center;
+    }
+    .about .user {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .about .user img {
+        width: 50%;
         border-radius: 100%;
     }
 }
@@ -156,7 +175,7 @@ hr {
  * Tablet
  *****************************/
 
-@media(max-width: 1280px) {
+@media(min-width: 728px) {
     body {
         flex-direction: column;
     }
@@ -180,11 +199,13 @@ hr {
     header .social {
         display: flex;
         flex-direction: row;
-
+        justify-content: center;
+        padding: 0;
+        list-style: none;
     }
     header .social .fa {
-        font-size: 125%;
         padding: 0 25%;
+        font-size: 125%;
         text-decoration: none;
         color: black;
     }
@@ -211,6 +232,21 @@ hr {
         justify-content: space-between;
         align-items: center;
     }
+
+    .single-post {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .single-post img {
+        width: 100%;
+    }
+    .single-post p {
+        line-height: 1.75;
+    }
+
     .author {
         text-decoration: none;
         color: black;
@@ -233,17 +269,20 @@ hr {
         background: #1d92f2;
         cursor: pointer;
     }
-    /* Paginte */
+    /* Paginate */
     .paginate {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: row;
+        list-style: none;
+        padding: 0;
     }
-    .paginate span {
-        padding: 3%;
+    .paginate li {
+        padding: 1%;
         color: #24292e;
     }
-    .paginate span:hover {
+    .paginate li:hover {
         text-decoration: underline;
         cursor: pointer;
     }
@@ -266,12 +305,24 @@ hr {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         margin-top: 5%;
     }
-    .about img {
-        width: 75%;
+
+    .about h2 {
+      text-align: center;
+    }
+
+    .about .user {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .about .user img {
+        width: 20%;
         border-radius: 100%;
+        margin-right: 5%;
+
     }
 }
 
@@ -303,11 +354,13 @@ hr {
   header .social {
       display: flex;
       flex-direction: row;
-
+      justify-content: center;
+      padding: 0;
+      list-style: none;
   }
   header .social .fa {
-      font-size: 125%;
       padding: 0 25%;
+      font-size: 125%;
       text-decoration: none;
       color: black;
   }
@@ -322,23 +375,17 @@ hr {
       color: #1db954;
   }
 
-  hr {
-    display: none;
-  }
   /* Posts */
-
-
   .container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .post {
       margin-bottom: 5%;
-      width: 30%;
+      width: 50%;
   }
   .post p {
       line-height: 1.6;
@@ -349,6 +396,22 @@ hr {
       justify-content: space-between;
       align-items: center;
   }
+
+  .single-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+  }
+
+  .single-post img {
+      width: 125%;
+  }
+  .single-post p {
+      line-height: 1.75;
+  }
+
   .author {
       text-decoration: none;
       color: black;
@@ -371,18 +434,20 @@ hr {
       background: #1d92f2;
       cursor: pointer;
   }
-  /* Paginte */
+  /* Paginate */
   .paginate {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
+      list-style: none;
+      padding: 0;
   }
-  .paginate span {
-      padding: 3%;
+  .paginate li {
+      padding: 1%;
       color: #24292e;
   }
-  .paginate span:hover {
+  .paginate li:hover {
       text-decoration: underline;
       cursor: pointer;
   }
