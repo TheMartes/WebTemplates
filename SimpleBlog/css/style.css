@@ -11,6 +11,12 @@ body {
 * {
     font-family: 'Lora', Serif;
 }
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -44,6 +50,7 @@ hr {
         text-align: center;
         text-transform: uppercase;
     }
+
     header .social {
         display: flex;
         flex-direction: row;
@@ -52,7 +59,7 @@ hr {
         list-style: none;
     }
     header .social .fa {
-        padding: 0 25%;
+        padding: 0 25% !important;
         font-size: 125%;
         text-decoration: none;
         color: black;
@@ -196,6 +203,7 @@ hr {
         text-align: center;
         text-transform: uppercase;
     }
+
     header .social {
         display: flex;
         flex-direction: row;
@@ -204,7 +212,7 @@ hr {
         list-style: none;
     }
     header .social .fa {
-        padding: 0 25%;
+        padding: 0 25% !important;
         font-size: 125%;
         text-decoration: none;
         color: black;
@@ -351,6 +359,14 @@ hr {
       text-align: center;
       text-transform: uppercase;
   }
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   header .social {
       display: flex;
       flex-direction: row;
@@ -440,8 +456,6 @@ hr {
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      list-style: none;
-      padding: 0;
   }
   .paginate li {
       padding: 1%;
