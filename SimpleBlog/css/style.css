@@ -51,12 +51,31 @@ hr {
         text-transform: uppercase;
     }
 
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header nav ul a {
+      text-decoration: none;
+      color: black;
+    }
+
+    header nav ul a:hover {
+      text-decoration: underline;
+    }
+
+    header nav ul a li {
+      padding: 0 10%;
+    }
+
     header .social {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 0;
-        list-style: none;
+        align-items: center;
     }
     header .social .fa {
         padding: 0 25% !important;
@@ -129,8 +148,6 @@ hr {
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        list-style: none;
-        padding: 0;
     }
     .paginate li {
         padding: 3%;
@@ -202,6 +219,26 @@ hr {
     header .sub-heading {
         text-align: center;
         text-transform: uppercase;
+    }
+
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header nav ul a {
+      text-decoration: none;
+      color: black;
+    }
+
+    header nav ul a:hover {
+      text-decoration: underline;
+    }
+
+    header nav ul a li {
+      padding: 0 10%;
     }
 
     header .social {
@@ -365,6 +402,19 @@ hr {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  header nav ul a {
+    text-decoration: none;
+    color: black;
+  }
+
+  header nav ul a:hover {
+    text-decoration: underline;
+  }
+
+  header nav ul a li {
+    padding: 0 10% !important;
   }
 
   header .social {
